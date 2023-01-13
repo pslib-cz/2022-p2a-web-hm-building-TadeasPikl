@@ -1,8 +1,17 @@
-
-
+html {
+    --primary: #EB6C27;
+    --text: #3A3A3A;
+    --text-gray: #888888;
+    --bg: #FFFFFF;
+}
 
 
 .header {
     background-image:url(../media/pageheader-1920w.jpg);
     width: 100vw;
+}
+
+.header__navbar {
+    background-color: var(--bg);
+    height: 3em;
 }
