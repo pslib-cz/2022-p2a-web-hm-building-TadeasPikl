@@ -8,10 +8,18 @@ html {
 
 .header {
     background-image:url(../media/pageheader-1920w.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100vw;
 }
 
 .header__navbar {
     background-color: var(--bg);
     height: 3em;
+}
+
+.header__title, .header__sub-title {
+    margin: auto;
+    text-align: center;
 }
