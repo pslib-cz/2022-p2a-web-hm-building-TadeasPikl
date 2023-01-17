@@ -147,3 +147,46 @@ a:has(.navbar__logo) {
     height: 8px;
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
 }
+
+.articles {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas: ". ar1 ." ". ar2 ." ". ar3 ." ". ar4 ." ". ar5 .";
+    row-gap: 40px;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.article__image {
+    width: 100%;
+}
+
+.article--services {grid-area: ar1;}
+.article--new-buildings {grid-area: ar2;}
+.article--industrial {grid-area: ar3;}
+.article--reconstruction {grid-area: ar4;}
+.article--communication {grid-area: ar5;}
+
+
+.btn {
+    padding: 12px 40px;
+    background-color: var(--primary);
+    color: var(--bg);
+    width: fit-content;
+}
+
+.btn--outlined {
+    background-color: var(--bg);
+    color: var(--primary);
+    outline: dashed var(--primary) 1px;
+}
+
+.article:nth-child(2n) > img {
+    border-radius: 0 0 30px 0;
+}
+
+.article:nth-child(2n + 1) > img {
+    border-radius: 0 0 0 30px;
+}
