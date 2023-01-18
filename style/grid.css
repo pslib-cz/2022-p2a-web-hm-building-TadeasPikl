@@ -1,0 +1,14 @@
+
+
+.articles {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas: ". ar1 ." ". ar2 ." ". ar3 ." ". ar4 ." ". ar5 .";
+    row-gap: 40px;
+}
+
+.article--services {grid-area: ar1;}
+.article--new-buildings {grid-area: ar2;}
+.article--industrial {grid-area: ar3;}
+.article--reconstruction {grid-area: ar4;}
+.article--communication {grid-area: ar5;}

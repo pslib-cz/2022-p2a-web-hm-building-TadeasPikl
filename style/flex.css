@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+a:has(.navbar__logo) {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-shrink: 1;
+    height: 75%;
+}
+
+.navbar__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+}
