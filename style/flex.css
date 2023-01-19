@@ -19,3 +19,16 @@ a:has(.navbar__logo) {
     padding: 0px;
     gap: 5px;
 }
+
+.navbar__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.guarantee-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

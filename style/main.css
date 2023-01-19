@@ -1,63 +1,15 @@
-@font-face {
-    font-family: 'Open Sans';
-    src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
-    font-family: 'Inter';
-    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
-}
-
 html {
     --primary: #EB6C27;
     --text: #3A3A3A;
     --text-gray: #888888;
     --bg: #FFFFFF;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: var(--text);
+    --dim: rgba(70, 70, 70, 0.5);
+    --darker-dim: rgba(50, 50, 50, 0.8);
 }
-
 
 body {
     margin-left: 0;
     margin-right: 0;
-}
-
-
-h1 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 41px;
-    letter-spacing: -0.05em;
-}
-
-h2 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    letter-spacing: -0.05em;
-}
-
-h3 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: -0.05em;
-}
-
-a:link, a:visited, a:hover, a:active {
-    color: var(--text);
-    text-decoration: none;
 }
 
 .header {
@@ -71,7 +23,7 @@ a:link, a:visited, a:hover, a:active {
     max-height: 20em;
     position: relative;
     background-blend-mode: darken;
-    background-color: rgba(70, 70, 70, 0.5);
+    background-color: var(--dim);
 }
 
 .header__text {
@@ -85,15 +37,6 @@ a:link, a:visited, a:hover, a:active {
     color: var(--bg);
 }
 
-.header__title {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 41px;
-    letter-spacing: -0.05em;
-}
-
 .navbar {
     background-color: var(--bg);
     height: 5em;
@@ -101,25 +44,8 @@ a:link, a:visited, a:hover, a:active {
     padding: 1em 1em 1em;
 }
 
-.navbar__menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-}
-
 .navbar__logo {
     max-height: 75%;
-}
-
-
-.navbar__menu-text {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    text-transform: uppercase;
 }
 
 .navbar__line {
@@ -136,6 +62,9 @@ a:link, a:visited, a:hover, a:active {
 
 .article__image {
     width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -148,7 +77,7 @@ a:link, a:visited, a:hover, a:active {
 
 .btn--outlined {
     background-color: var(--bg);
-    color: var(--primary) !important;
+    color: var(--primary);
     outline: dashed var(--primary) 1px;
 }
 
@@ -158,4 +87,22 @@ a:link, a:visited, a:hover, a:active {
 
 .article:nth-child(2n + 1) > img {
     border-radius: 0 0 0 30px;
+}
+
+.article__content {
+    margin-bottom: 2em;
+}
+
+
+.guarantee-banner {
+    width: calc(100%-3em);
+    margin: 5em 0 5em;
+    background-color: var(--darker-dim);
+    background-blend-mode: darken;
+    background-image: url(../media/background-CTAblock-4460w.jpg);
+    background-position: center;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    min-height: 190px;
+    padding: 1.5em;
 }

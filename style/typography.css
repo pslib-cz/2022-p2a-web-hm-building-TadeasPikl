@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--text);
+}
+
+@layer base {
+
+    h1 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        letter-spacing: -0.05em;
+    }
+
+    h2 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.05em;
+    }
+
+    h3 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: -0.05em;
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        color: var(--text);
+        text-decoration: none;
+    }
+}
+
+.header__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.05em;
+}
+
+
+.navbar__menu-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.guarantee-banner {
+    color: var(--bg);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+}
