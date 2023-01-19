@@ -56,6 +56,10 @@ html {
     color: var(--primary);
 }
 
+.btn {
+    font-weight: 700;
+}
+
 .header__title {
     font-family: 'Open Sans';
     font-style: normal;
@@ -84,6 +88,6 @@ html {
     line-height: 21px;
 }
 
-.references__caption {
+.references__reference {
     text-align: center;
 }

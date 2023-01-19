@@ -15,10 +15,12 @@
 .references {
     display: grid;
     grid-template-columns: 1.5em 1fr 1.5em;
-    grid-template-areas: ". text ." ". ref1 ." ". ref2 ." ". ref3 .";
+    grid-template-areas: ". text ." ". ref1 ." ". ref2 ." ". ref3 ." ". more .";
+    justify-items: center;
 }
 
 .references__text {grid-area: text;}
 .references__reference--firefighter {grid-area: ref1;}
 .references__reference--laundry {grid-area: ref2;}
 .references__reference--restyl {grid-area: ref3;}
+.references__more {grid-area: more;}
