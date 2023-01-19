@@ -54,13 +54,7 @@ body {
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
 }
 
-
-
-.highlight {
-    color: var(--primary);
-}
-
-.article__image {
+.image-responsive {
     width: 100%;
     display: block;
     margin: 0;
@@ -81,11 +75,11 @@ body {
     outline: dashed var(--primary) 1px;
 }
 
-.article:nth-child(2n) > img {
+.articles__article:nth-child(2n) > .article__image {
     border-radius: 0 0 30px 0;
 }
 
-.article:nth-child(2n + 1) > img {
+.articles__article:nth-child(2n + 1) > .article__image {
     border-radius: 0 0 0 30px;
 }
 
@@ -96,7 +90,7 @@ body {
 
 .guarantee-banner {
     width: calc(100%-3em);
-    margin: 5em 0 5em;
+    margin: 3em 0;
     background-color: var(--darker-dim);
     background-blend-mode: darken;
     background-image: url(../media/background-CTAblock-4460w.jpg);
@@ -106,3 +100,4 @@ body {
     min-height: 190px;
     padding: 1.5em;
 }
+

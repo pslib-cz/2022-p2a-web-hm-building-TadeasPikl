@@ -51,6 +51,11 @@ html {
     }
 }
 
+
+.highlight {
+    color: var(--primary);
+}
+
 .header__title {
     font-family: 'Open Sans';
     font-style: normal;
@@ -77,4 +82,8 @@ html {
     font-weight: 700;
     font-size: 17px;
     line-height: 21px;
+}
+
+.references__caption {
+    text-align: center;
 }
