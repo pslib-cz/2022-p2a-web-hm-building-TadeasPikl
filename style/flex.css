@@ -12,15 +12,7 @@ a:has(.navbar__logo) {
     height: 75%;
 }
 
-.navbar__icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 5px;
-}
-
-.navbar__menu {
+.navbar__hamburger {
     display: flex;
     flex-direction: column;
     align-items: center;

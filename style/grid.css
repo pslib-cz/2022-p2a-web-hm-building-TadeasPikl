@@ -1,15 +1,15 @@
-.articles {
+.services-container {
     display: grid;
     grid-template-columns: 1.5em 1fr 1.5em;
     grid-template-areas: ". ar1 ." ". ar2 ." ". ar3 ." ". ar4 ." ". ar5 .";
     row-gap: 40px;
 }
 
-.articles__article--services {grid-area: ar1;}
-.articles__article--new-buildings {grid-area: ar2;}
-.articles__article--industrial {grid-area: ar3;}
-.articles__article--reconstruction {grid-area: ar4;}
-.articles__article--communication {grid-area: ar5;}
+.service--services {grid-area: ar1;}
+.service--new-buildings {grid-area: ar2;}
+.service--industrial {grid-area: ar3;}
+.service--reconstruction {grid-area: ar4;}
+.service--communication {grid-area: ar5;}
 
 
 .references {
@@ -19,8 +19,8 @@
     justify-items: center;
 }
 
-.references__text {grid-area: text;}
-.references__reference--firefighter {grid-area: ref1;}
-.references__reference--laundry {grid-area: ref2;}
-.references__reference--restyl {grid-area: ref3;}
-.references__more {grid-area: more;}
+.references-text {grid-area: text;}
+.reference--firefighter {grid-area: ref1;}
+.reference--laundry {grid-area: ref2;}
+.reference--restyl {grid-area: ref3;}
+.more {grid-area: more;}
