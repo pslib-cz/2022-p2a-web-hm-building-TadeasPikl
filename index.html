@@ -18,9 +18,20 @@
             <a class="navbar__hamburger" href="javascript:void(0);">
                 <span class="navbar__hamburger-text">MENU</span>
                 <img src="./media/hamburger.svg" alt="hamburger menu">
-                <menu class="navbar__menu"></menu>
+                <menu class="navbar__menu navbar__menu--hidden"></menu>
             </a>
         </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".navbar__hamburger");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".navbar__menu");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
         <div class="header__text">
             <h1 class="header__title">HM Building.cz s.r.o.<span class="header__sub-title">liberecká stavební společnost</span></h1>
         </div>
