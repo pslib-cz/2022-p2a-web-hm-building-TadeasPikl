@@ -51,6 +51,14 @@ html {
     }
 }
 
+.header__sub-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+}
 
 .highlight {
     color: var(--primary);
