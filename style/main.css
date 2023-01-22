@@ -27,6 +27,11 @@ body {
     background-color: var(--dim);
 }
 
+.header--no-image {
+    height: auto;
+    min-height: 98px;
+}
+
 .header__text {
     position: absolute;
     bottom: 0;
@@ -112,12 +117,14 @@ body {
     align-items: center;
     background-color: var(--primary);
     color: var(--bg);
-    margin-top: 7em;
     height: 290px;
     padding: var(--side-space);
     text-align: center;
 }
 
+.references {
+    margin-bottom: 6em;
+}
 
 .cover {
     display: block;
@@ -159,4 +166,19 @@ body {
     rotate: 45deg;
     top: -10px;
     right: 9px;
+}
+
+.text-section {
+    margin: 2em 2em 4em;
+}
+
+.text-section__dot-list li {
+    list-style-type: disc;
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.text-section__dot-list li span {
+    font-size: 14px;
+    color: var(--text);
 }

@@ -124,3 +124,7 @@ html {
 .navbar__menu .current-page {
     font-weight: 700;
 }
+
+.text-section {
+    line-height: 19px;
+}
