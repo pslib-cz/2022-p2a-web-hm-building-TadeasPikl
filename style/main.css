@@ -43,6 +43,9 @@ body {
     height: 5em;
     width: calc(100vw - 2em);
     padding: 1em 1em 1em;
+    position:absolute;
+    top: 0;
+    z-index: 2;
 }
 
 .navbar__logo {
@@ -115,8 +118,45 @@ body {
     text-align: center;
 }
 
+
+.cover {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
 @media (max-width:875px) {
     .navbar__menu--hidden {
         display: none;
     }
+}
+
+.service__text {
+    margin-bottom: 2em;
+}
+
+.navbar__menu {
+    text-transform: uppercase;
+    position: absolute;
+    top: 7em;
+    background-color: var(--primary);
+    left: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    z-index: 2;
+}
+
+.navbar__menu::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: var(--primary);
+    width: 20px;
+    height: 20px;
+    rotate: 45deg;
+    top: -10px;
+    right: 9px;
 }

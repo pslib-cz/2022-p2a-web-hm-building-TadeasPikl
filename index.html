@@ -12,20 +12,29 @@
     <link rel="stylesheet" href="./style/flex.css">
 </head>
 <body>
+    <div class="cover navbar__menu--hidden"></div>
     <header class="header">
         <nav class="navbar">
             <a href="#"><img class="navbar__logo" src="./media/logo.png" alt="HM Building.cz logo"></a>
             <a class="navbar__hamburger" href="javascript:void(0);">
                 <span class="navbar__hamburger-text">MENU</span>
                 <img src="./media/hamburger.svg" alt="hamburger menu">
-                <menu class="navbar__menu navbar__menu--hidden"></menu>
             </a>
+            <menu class="navbar__menu navbar__menu--hidden">
+                <ul>
+                    <li><a href="#" class="navbar__item current-page">DOMŮ</a></li>
+                    <li><a class="navbar__item" href="#services">SLUŽBY</a></li>
+                    <li><a class="navbar__item" href="#references">REFERENCE</a></li>
+                    <li><a class="navbar__item" href="#">O NÁS</a></li>
+                    <li><a class="navbar__item" href="#">KONTAKT</a></li>
+                </ul>
+            </menu>
         </nav>
         <script>
-            const hamburgerButtons = document.querySelectorAll(".navbar__hamburger");
+            const hamburgerButtons = document.querySelectorAll(".navbar__hamburger, .cover, .navbar__item");
             for (const btn of hamburgerButtons) {
                 btn.onclick = (event) => {
-                    const menus = document.querySelectorAll(".navbar__menu");
+                    const menus = document.querySelectorAll(".navbar__menu, .cover");
                     for (const menu of menus) {
                         menu.classList.toggle("navbar__menu--hidden");
                     }
@@ -36,7 +45,7 @@
             <h1 class="header__title">HM Building.cz s.r.o.<span class="header__sub-title">liberecká stavební společnost</span></h1>
         </div>
     </header>
-    <section class="services-container">
+    <section class="services-container" id="services">
         <div class="service service--services">
             <div class="service__content">
                 <h2>Využijte škálu našich <span class="highlight">služeb</span></h2>
@@ -80,7 +89,7 @@
         <div><p>Naše firma nabízí své služby ve stavebnictví od roku 2015.</p><p>Za kvalitu naší práce ručíme.</p></div>
         <a class="btn" href="#">Přesvědčit se</a>
     </section>
-    <section class="references">
+    <section class="references" id="references">
         <div class="references-text">
             <h2>Rádi vám ukážeme naše <span class="highlight">reference</span></h2>
             <p>Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavebnictví</b>. To, že <b>obrátit se na právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
