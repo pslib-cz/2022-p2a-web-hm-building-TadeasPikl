@@ -128,3 +128,9 @@ html {
 .text-section {
     line-height: 19px;
 }
+
+.contact-adresses__list {
+    color: var(--primary);
+    font-weight: 700;
+    line-height: 19px;
+}

@@ -24,3 +24,10 @@
 .reference--laundry {grid-area: ref2;}
 .reference--restyl {grid-area: ref3;}
 .more {grid-area: more;}
+
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+}

@@ -172,13 +172,43 @@ body {
     margin: 2em 2em 4em;
 }
 
-.text-section__dot-list li {
+.text-section__dot-list > li {
     list-style-type: disc;
     font-size: 24px;
     color: var(--primary);
 }
 
-.text-section__dot-list li span {
+.text-section__dot-list > li span {
     font-size: 14px;
     color: var(--text);
+}
+
+.contact-adresses__list {
+    list-style: none;
+}
+
+.contact-adresses__list > li {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: 4em;
+}
+
+.contact-adresses__list > li::before {
+    display: block;
+    position: absolute;
+    background-color: var(--primary);
+    color: var(--bg);
+    height: 30px;
+    width: 30px;
+    left: 45px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.contact-adresses__phone::before {content: url(../media/svg/phone.svg);}
+.contact-adresses__email::before {content: url(../media/svg/mail.svg);}
+.contact-adresses__location::before {content: url(../media/svg/location.svg);}
+
+.form-item {
+    margin-bottom: 1em;
 }
