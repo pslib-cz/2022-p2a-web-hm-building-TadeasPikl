@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./style/flex.css">
 </head>
 <body>
-    <div class="cover navbar__menu--hidden"></div>
+    <div class="cover no-desktop navbar__menu--hidden"></div>
     <header class="header header--no-image">
         <nav class="navbar">
             <a href="./index.html"><img class="navbar__logo" src="./media/logo.png" alt="HM Building.cz logo"></a>
@@ -61,42 +61,42 @@
         <h2>Nezávazná poptávka služeb</h2>
         <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
         
-        <form name="contact">
+        <form name="contact-form__form">
             
-            <div class="form-item">
+            <div class="contact-form__form-item">
                 <label for="name">Jméno a příjmení</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
             </div>
 
-            <div class="form-item">
+            <div class="contact-form__form-item">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
 
-            <div class="form-item">
+            <div class="contact-form__form-item">
                 <label for="phone">Telefon</label>
-                <input type="tel" id="phone" name="phone">
+                <input type="tel" id="phone" name="phone" required>
             </div>
 
-            <div class="form-item">
+            <div class="contact-form__form-item">
                 <label for="service">Poptávaná služba</label>
-                <select type="tel" id="service" name="service">
-                    <option value="novostavba">Novostavba</option>
-                    <option value="rekonstrukce">Rekonstrukce</option>
+                <select type="tel" id="service" name="service" required>
+                    <option value=""></option>
+                    <option value="new-building">Novostavba</option>
+                    <option value="reconstruction">Rekonstrukce</option>
                 </select>
             </div>
-        
+            
+            <div class="contact-form__form-item">
+                <label for="notes">poznámka</label>
+                <textarea type="" id="notes" name="notes"></textarea>
+            </div>
 
+            <button class="btn btn--higher">Odeslat nezávaznou poptávku</button>
 
+            
         </form>
 
     </section>
-    
-
-    <footer class="footer-main">
-        <h2>Plácneme si pro Váš projekt?</h2>
-        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <a class="btn btn--white" href="./contact.html">Nezávazně poptat</a>
-    </footer>
 </body>
 </html>
