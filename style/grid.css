@@ -31,3 +31,24 @@
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
 }
+
+
+@media (min-width:875px) {
+
+    .services-container {
+        grid-template-columns: 205px 1fr 205px;
+        grid-template-areas: ". ar1 ." ". ar2 ." ". ar3 ." ". ar4 ." ". ar5 .";
+        row-gap: 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -20,7 +20,7 @@ body {
     background-position-x: center;
     background-position-y: center;
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     max-height: 30em;
     position: relative;
     background-blend-mode: darken;
@@ -251,8 +251,87 @@ body {
     padding: 11px;
 }
 
+.navbar__item {
+    margin: 0;
+    padding: 0;
+}
+
 
 @media (min-width:875px) {
 
+    .navbar__menu {
+        position: static;
+        width: fit-content;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg);
+    }
 
+    .navbar {
+        width: 75vw;
+        margin: 3em auto 0;
+        left:0;
+        right:0;
+        background-size: cover;
+        height: 7em;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar__menu > ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+    
+    .navbar__item {
+        height: 100%;
+        width: 100%;
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar__hamburger {
+        display: none;
+    }
+
+    .navbar__menu::after {
+        display: none;
+    }
+
+    .header {
+        height: 100vh;
+        max-height: none;
+    }
+
+    .service--services {
+        text-align: center;
+    }
+
+    .service:not(.service--services) {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .service:not(.service--services) > .service__content, .service > aside {
+        width: calc(50% - 50px);
+    }
+
+    .service__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 1;
+    }
+
+    .service:nth-child(2n + 1) aside {
+        order: 2;
+    }
 }

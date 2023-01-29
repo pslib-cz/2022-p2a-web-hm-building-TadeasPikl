@@ -15,6 +15,15 @@ html {
     line-height: 17px;
     color: var(--text);
 }
+@media (min-width:875px) {
+    html {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
 
 @layer base {
 
@@ -48,6 +57,38 @@ html {
     a {
         color: var(--text);
         text-decoration: none;
+    }
+
+    @media (min-width:875px) {
+
+        h1 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 120px;
+            line-height: 163px;
+            letter-spacing: -0.05em;
+        }
+
+        h2 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 82px;
+            letter-spacing: -0.05em;
+        }
+
+        h3 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 41px;
+            text-transform: uppercase;
+        }
+
+
     }
 }
 
@@ -110,18 +151,16 @@ html {
     padding: 0;
 }
 
-.navbar__menu a {
+.navbar__item {
     color: var(--bg);
     font-family: 'Open Sans';
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    margin: 0;
-    padding: 0;
     text-decoration-line: underline;
 }
 
-.navbar__menu .current-page {
+.current-page {
     font-weight: 700;
 }
 
@@ -133,4 +172,45 @@ html {
     color: var(--primary);
     font-weight: 700;
     line-height: 19px;
+}
+
+@media (min-width:875px) {
+
+    .header__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 120px;
+        line-height: 163px;
+        letter-spacing: -0.05em;
+    }
+    .header__sub-title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 82px;
+    }
+
+    .navbar__item {
+        color: var(--text);
+        background-color: var(--bg);
+        text-decoration-line: none;
+    }
+
+    .navbar__item:hover {
+        font-weight: 700;
+    }
+
+    .navbar__menu li {
+        margin: 0;
+    }
+
+    .current-page {
+        font-weight: 500;
+        background-color: var(--primary);
+        color: var(--bg);
+    }
+    
+
 }
