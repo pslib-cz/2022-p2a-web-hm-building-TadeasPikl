@@ -207,5 +207,29 @@ html {
         color: var(--bg);
     }
     
+    .guarantee-banner {
+        font-family: 'Open Sans';
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 48px;
+    }
 
+    .reference {
+        color: var(--bg);
+    }
+
+    .reference h2 {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 34px;
+        text-transform: uppercase;
+    }
+
+    .reference p {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+    }
 }

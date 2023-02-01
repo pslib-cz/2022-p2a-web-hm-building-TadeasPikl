@@ -41,11 +41,12 @@
         row-gap: 40px;
     }
 
-
-
-
-
-
+    .references {
+        display: grid;
+        grid-template-columns: minmax(auto, 205px) 1fr 1fr 1fr minmax(auto, 205px);
+        grid-template-areas: ". text text text ." ". ref1 ref2 ref3 ." ". more more more .";
+        justify-items: center;
+    }
 
 
 

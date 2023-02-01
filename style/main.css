@@ -5,7 +5,8 @@ html {
     --bg: #FFFFFF;
     --dim: rgba(70, 70, 70, 0.5);
     --darker-dim: rgba(50, 50, 50, 0.8);
-    --side-space:1.5em;
+    --side-space: 1.5em;
+    --primary-transparent: rgba(235, 108, 39, 0.9);
 }
 
 body {
@@ -117,10 +118,6 @@ body {
 
 .footer-main {
     width: calc(100% - var(--side-space) * 2);
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items: center;
     background-color: var(--primary);
     color: var(--bg);
     height: 290px;
@@ -200,16 +197,11 @@ body {
 }
 
 .contact-adresses__list > li {
-    display: flex;
-    align-items: center;
     margin-top: 36px;
     margin-bottom: 36px;   
 }
 
 .contact-adresses__list > li::before {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--primary);
     color: var(--bg);
     height: 30px;
@@ -378,4 +370,47 @@ body {
     .service:nth-child(2n + 1) aside {
         order: 2;
     }
+
+    .guarantee-banner {
+        background-size: cover;
+        padding: 128px 200px;
+        width: auto;
+    }
+
+    .references-text {
+        text-align: center;
+        max-width: 950px;
+    }
+
+    .reference {
+        position: relative;
+    }
+
+    .reference > figcaption > * {
+        margin: 6px 0;
+    }
+
+    .reference > figcaption {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: var(--primary-transparent);
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.4s ease-in;
+        
+    }
+
+    .reference > figcaption:hover {
+        opacity: 1;
+    }
+
+    .header--no-image {
+        height: 14em;
+    }
+
 }
