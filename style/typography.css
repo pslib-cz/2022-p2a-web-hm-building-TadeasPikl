@@ -68,6 +68,7 @@ html {
             font-size: 120px;
             line-height: 163px;
             letter-spacing: -0.05em;
+            text-align: center;
         }
 
         h2 {
@@ -159,14 +160,31 @@ html {
     font-weight: 700;
 }
 
-.text-section {
-    line-height: 19px;
-}
-
 .contact-adresses__list {
     color: var(--primary);
     font-weight: 700;
     line-height: 19px;
+}
+
+.text-section {
+    line-height: 19px;
+    margin: 2em 2em 4em;
+    max-width: 75em;
+}
+
+.text-section__dot-list > li {
+    list-style-type: disc;
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.text-section__dot-list > li span {
+    font-size: 14px;
+    color: var(--text);
+}
+
+.text-section--gallery {
+    text-align: center;
 }
 
 @media (min-width:875px) {
@@ -214,7 +232,22 @@ html {
         line-height: 48px;
     }
 
-    .reference {
+    .contact-form > h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+    }
+
+    .contact-form__select {
+        background-color: var(--bg);
+    }
+}
+
+
+@media (min-width:1540px) {
+
+
+    .reference a {
         color: var(--bg);
     }
 
@@ -232,4 +265,16 @@ html {
         font-size: 20px;
         line-height: 27px;
     }
+
+    .text-section {
+        line-height: inherit;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .text-section__dot-list > li span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
 }

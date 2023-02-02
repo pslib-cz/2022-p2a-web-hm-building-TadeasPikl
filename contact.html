@@ -40,60 +40,64 @@
             }
         </script>
     </header>
-    <section class="contact-info text-section">
-        <h1>Kontaktujte nás</h1>
-        <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
-    </section>
-    
-    <section class="contact-adresses">
-        <ul class="contact-adresses__list">
-            <li class="contact-adresses__phone">+420 775 550 564</li>
-            <li class="contact-adresses__email">stavby@hm-building.cz</li>
-            <li class="contact-adresses__location">Křižanská 12, Liberec XXII-Horní Suchá</li>
-        </ul>
-    </section>
-
-    <img class="image-responsive" src="./media/mapa.jpg" alt="mapa k naží adrese">
-
-    <section class="contact-form text-section">
-        <h2>Nezávazná poptávka služeb</h2>
-        <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+    <section class="contact-page">
         
-        <form name="contact-form__form">
+        <div class="contact-info text-section">
+            <h1 class="side-page-title">Kontaktujte nás</h1>
+            <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
+        </div>
+        
+        <div class="contact-adresses">
+            <ul class="contact-adresses__list">
+                <li class="contact-adresses__phone">+420 775 550 564</li>
+                <li class="contact-adresses__email">stavby@hm-building.cz</li>
+                <li class="contact-adresses__location">Křižanská 12, Liberec XXII-Horní Suchá</li>
+            </ul>
+        </div>
+
+        <div class="contact-map"><img class="image-responsive" src="./media/mapa.jpg" alt="mapa k naží adrese"></div>
+
+        <div class="contact-form text-section">
+            <h2>Nezávazná poptávka služeb</h2>
+            <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
             
-            <div class="contact-form__form-item">
-                <label for="name">Jméno a příjmení</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+            <form name="contact-form__form">
+                
+                <div class="contact-form__form-item">
+                    <label for="name">Jméno a příjmení</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-            <div class="contact-form__form-item">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+                <div class="contact-form__form-item">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <div class="contact-form__form-item">
-                <label for="phone">Telefon</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
+                <div class="contact-form__form-item">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
 
-            <div class="contact-form__form-item">
-                <label for="service">Poptávaná služba</label>
-                <select type="tel" id="service" name="service" required>
-                    <option value=""></option>
-                    <option value="new-building">Novostavba</option>
-                    <option value="reconstruction">Rekonstrukce</option>
-                </select>
-            </div>
-            
-            <div class="contact-form__form-item">
-                <label for="notes">poznámka</label>
-                <textarea type="" id="notes" name="notes"></textarea>
-            </div>
+                <div class="contact-form__form-item">
+                    <label for="service">Poptávaná služba</label>
+                    <select class="contact-form__select" id="service" name="service" required>
+                        <option value="">-- vyberte --</option>
+                        <option value="new-building">Novostavba</option>
+                        <option value="reconstruction">Rekonstrukce</option>
+                    </select>
+                </div>
+                
+                <div class="contact-form__form-item">
+                    <label for="notes">poznámka</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
 
-            <button class="btn btn--higher">Odeslat nezávaznou poptávku</button>
+                <button class="btn btn--higher">Odeslat nezávaznou poptávku</button>
 
-            
-        </form>
+                
+            </form>
+
+        </div>
 
     </section>
 </body>
