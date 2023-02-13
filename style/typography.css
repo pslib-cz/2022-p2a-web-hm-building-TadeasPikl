@@ -11,7 +11,7 @@ html {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 17px;
     color: var(--text);
 }
@@ -20,7 +20,7 @@ html {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1em;
         line-height: 22px;
     }
 }
@@ -31,7 +31,7 @@ html {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 1.875em;
         line-height: 41px;
         letter-spacing: -0.05em;
     }
@@ -40,7 +40,7 @@ html {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
-        font-size: 22px;
+        font-size: 1.375em;
         line-height: 30px;
         letter-spacing: -0.05em;
     }
@@ -49,13 +49,13 @@ html {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 1.25em;
         line-height: 27px;
         letter-spacing: -0.05em;
     }
 
     a {
-        color: var(--text);
+        color: inherit;
         text-decoration: none;
     }
 
@@ -65,7 +65,7 @@ html {
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 800;
-            font-size: 120px;
+            font-size: 7.5em;
             line-height: 163px;
             letter-spacing: -0.05em;
             text-align: center;
@@ -75,7 +75,7 @@ html {
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 700;
-            font-size: 60px;
+            font-size: 3.75rem;
             line-height: 82px;
             letter-spacing: -0.05em;
         }
@@ -84,7 +84,7 @@ html {
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 700;
-            font-size: 30px;
+            font-size: 1.875em;
             line-height: 41px;
             text-transform: uppercase;
         }
@@ -97,7 +97,7 @@ html {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 27px;
     letter-spacing: -0.05em;
 }
@@ -114,7 +114,7 @@ html {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 1.875em;
     line-height: 41px;
     letter-spacing: -0.05em;
 }
@@ -124,7 +124,7 @@ html {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
     text-transform: uppercase;
 }
@@ -134,7 +134,7 @@ html {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.0625em;
     line-height: 21px;
 }
 
@@ -151,7 +151,7 @@ html {
     color: var(--bg);
     font-family: 'Open Sans';
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 22px;
     text-decoration-line: underline;
 }
@@ -174,12 +174,12 @@ html {
 
 .text-section__dot-list > li {
     list-style-type: disc;
-    font-size: 24px;
+    font-size: 1.5em;
     color: var(--primary);
 }
 
 .text-section__dot-list > li span {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--text);
 }
 
@@ -193,7 +193,7 @@ html {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 800;
-        font-size: 120px;
+        font-size: 7.5em;
         line-height: 163px;
         letter-spacing: -0.05em;
     }
@@ -201,7 +201,7 @@ html {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 300;
-        font-size: 60px;
+        font-size: 3.75rem;
         line-height: 82px;
     }
 
@@ -228,13 +228,13 @@ html {
     .guarantee-banner {
         font-family: 'Open Sans';
         font-weight: 800;
-        font-size: 30px;
+        font-size: 1.875em;
         line-height: 48px;
     }
 
     .contact-form > h2 {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 1.875em;
         line-height: 41px;
     }
 
@@ -254,7 +254,7 @@ html {
     .reference h2 {
         font-family: 'Open Sans';
         font-weight: 700;
-        font-size: 25px;
+        font-size: 1.5625em;
         line-height: 34px;
         text-transform: uppercase;
     }
@@ -262,7 +262,7 @@ html {
     .reference p {
         font-family: 'Open Sans';
         font-weight: 400;
-        font-size: 20px;
+        font-size: 1.25em;
         line-height: 27px;
     }
 
@@ -273,7 +273,7 @@ html {
     }
 
     .text-section__dot-list > li span {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 22px;
     }
 

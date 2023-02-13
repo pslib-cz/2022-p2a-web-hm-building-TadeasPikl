@@ -68,16 +68,19 @@ body {
 
 
 .btn {
-    padding: 12px 40px;
+    display: flex;
+    width: 250px;
+    height: 75px;
     background-color: var(--primary);
     color: var(--bg);
-    width: fit-content;
     border-width: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn--higher {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    height: 90px;
 }
 
 .btn--outlined {
@@ -237,8 +240,12 @@ body {
 .header__btn {
     display: none;
     justify-content: space-evenly;
-    width: 150px;
+    width: 300px;
     margin: 0 auto 2em;
+}
+
+.header__btn img {
+    height: 20px;
 }
 
 .footer-main--short-page {
@@ -261,7 +268,7 @@ body {
     .btn {
         font-family: 'Open Sans';
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.25em;
         line-height: 27px;
     }
 
@@ -388,7 +395,7 @@ body {
 
     .side-page-title {
         font-weight: 700;
-        font-size: 60px;
+        font-size: 3.75em;
         line-height: 82px;
     }
 
